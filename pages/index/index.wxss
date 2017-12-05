@@ -1,0 +1,12 @@
+.red {
+  color: red;
+}
+
+.view {
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1rpx solid #e5e5e5;
+  padding: 8px 0;
+  margin-bottom: 5px;
+}

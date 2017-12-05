@@ -1,0 +1,26 @@
+<block wx:if="{{state}}">
+
+  <my-mask state="{{maskState}}" catchtap="hid"></my-mask>
+
+  <view class='root {{donghua}}'>
+
+    <view wx:if="{{title}}" class='title'>这是可选择消失的TITLE</view>
+
+    <scroll-view scroll-y style="max-height: 250px;">
+      <block wx:for="{{list}}" wx:key="">
+        <view class='item' hover-class='itemhover' catchtap='item' data-item='{{item}}' data-index="{{index}}">{{item}}-{{index}}</view>
+      </block>
+    </scroll-view>
+
+    <view wx:if="{{cancel}}" class='cancel' catchtap='cancel'>cancel</view>
+  </view>
+
+
+</block>
+
+<slot></slot>
+
+<!-- <button catchtap='show'>show</button>
+<button catchtap='hid'>hid</button> -->
+
+<!-- style="height: 300px;" -->

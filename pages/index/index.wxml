@@ -1,0 +1,16 @@
+<!-- sheetdown -->
+<my-sheetdown state="{{sheetState}}" list="{{mylist}}" bind:itemEvent="itemE" cancel title>
+  <view catchtap="sheetTap" class='view'>{{sheetDownItem || 'sheetDown'}}{{sheetDownIndex}}</view>
+</my-sheetdown>
+
+<!-- checkbox -->
+<my-sheetcheckbox state="{{checkboxState}}" list="{{checkboxlist}}" bind:itemEvent="checkboxitemE" cancel title>
+  <view catchtap="checkboxTap" class='view'>{{checkboxValueStr || 'sheetCheckBox'}}</view>
+</my-sheetcheckbox>
+
+<!-- toptips -->
+<my-toptips state="{{toptips_kaiguan}}" tipsText="{{toptips_text}}"></my-toptips>
+<view class='view' bindtap='cuowuTips'>toptips</view>
+
+<!-- my-cell -->
+<my-cell></my-cell>
